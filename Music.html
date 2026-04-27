@@ -4,6 +4,10 @@
 <meta charset="UTF-8">
 <title>Logan Clardy - Music Page!!!</title>
 <link href="Music.css" rel="stylesheet" type="text/css">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+>
 </head>
 
 <body>
@@ -11,7 +15,7 @@
 <div class="nav">
   <a href="Home.html">About Me</a>
   &nbsp;&nbsp;&nbsp;
-  <a href="music.html" class="current">Music</a>
+  <a href="Music.html" class="current">Music</a>
   &nbsp;&nbsp;&nbsp;
   <a href="SoundDesign.html">Sound Design</a>
   &nbsp;&nbsp;&nbsp;
@@ -98,8 +102,22 @@
 
 <div style="text-align:center; background-color: pink; padding: 20px; border: 4px double black;">
   <div class="live-photos">
-    <img src="999FD700-21E1-441D-82C5-25B0F5C7E1F9_1_105_c.jpeg" class="live-photo" alt="my band at an outdoor show">
-    <img src="33D7DC0B-4E76-456D-91DC-75BD9EE46B8D_1_105_c.jpeg" class="live-photo" alt="me running sound at a bar">
+    <a
+      href="999FD700-21E1-441D-82C5-25B0F5C7E1F9_1_105_c.jpeg"
+      data-fancybox="live-gallery"
+      data-caption="My band at an outdoor show"
+      class="live-photo-link"
+    >
+      <img src="999FD700-21E1-441D-82C5-25B0F5C7E1F9_1_105_c.jpeg" class="live-photo" alt="my band at an outdoor show">
+    </a>
+    <a
+      href="33D7DC0B-4E76-456D-91DC-75BD9EE46B8D_1_105_c.jpeg"
+      data-fancybox="live-gallery"
+      data-caption="Me running sound at a bar"
+      class="live-photo-link"
+    >
+      <img src="33D7DC0B-4E76-456D-91DC-75BD9EE46B8D_1_105_c.jpeg" class="live-photo" alt="me running sound at a bar">
+    </a>
   </div>
   <br>
 </div>
@@ -120,5 +138,20 @@
 
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<script>
+  Fancybox.bind('[data-fancybox="live-gallery"]', {
+    Thumbs: false,
+    Toolbar: {
+      display: {
+        left: ["infobar"],
+        middle: [],
+        right: ["slideshow", "close"]
+      }
+    }
+  });
+</script>
+
 </body>
 </html>
+
