@@ -4,6 +4,10 @@
 <meta charset="UTF-8">
 <title>Logan Clardy - Sound Design!!!</title>
 <link href="Sound Design.css" rel="stylesheet" type="text/css">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+>
 </head>
 
 <body>
@@ -100,7 +104,38 @@
 <h2 style="text-align:center; color:darkred;">&#128247; Me Working &#128247;</h2>
 
 <div style="text-align:center; background-color: pink; padding: 20px; border: 4px double black;">
-  <img src="33D7DC0B-4E76-456D-91DC-75BD9EE46B8D_1_105_c.jpeg" width="600" style="margin:8px; border: 5px solid navy;" alt="me running sound at a bar">
+  <a
+    href="33D7DC0B-4E76-456D-91DC-75BD9EE46B8D_1_105_c.jpeg"
+    data-fancybox="sounddesign-gallery"
+    data-caption="Me running sound at a bar"
+    class="work-photo-link"
+  >
+    <img src="33D7DC0B-4E76-456D-91DC-75BD9EE46B8D_1_105_c.jpeg" width="600" class="work-photo" alt="me running sound at a bar">
+  </a>
+  <a
+    href="999FD700-21E1-441D-82C5-25B0F5C7E1F9_1_105_c.jpeg"
+    data-fancybox="sounddesign-gallery"
+    data-caption="My band at an outdoor show"
+    class="gallery-hidden"
+    aria-hidden="true"
+    tabindex="-1"
+  ></a>
+  <a
+    href="48CA6DF8-E4F2-40DE-9CEC-C4E243051FAC_1_105_c.jpeg"
+    data-fancybox="sounddesign-gallery"
+    data-caption="Behind the scenes"
+    class="gallery-hidden"
+    aria-hidden="true"
+    tabindex="-1"
+  ></a>
+  <a
+    href="C0F72D6B-39A4-467B-AE1D-00D63E1D2CE6_1_105_c.jpeg"
+    data-fancybox="sounddesign-gallery"
+    data-caption="Another live sound moment"
+    class="gallery-hidden"
+    aria-hidden="true"
+    tabindex="-1"
+  ></a>
   <br>
 </div>
 
@@ -131,6 +166,20 @@
   <br><br>
 
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<script>
+  Fancybox.bind('[data-fancybox="sounddesign-gallery"]', {
+    Thumbs: false,
+    Toolbar: {
+      display: {
+        left: ["infobar"],
+        middle: [],
+        right: ["slideshow", "close"]
+      }
+    }
+  });
+</script>
 
 </body>
 </html>
