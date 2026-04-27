@@ -74,7 +74,7 @@
     font-size: 18px;
   }
 
-  /* I copied this from stackoverflow lol */
+ 
   .rainbow {
     background: linear-gradient(to right, red, orange, yellow, green, blue, violet);
     -webkit-background-clip: text;
@@ -90,3 +90,19 @@
     margin: 8px;
     border: 5px solid navy;
   }
+
+  .gallery-photo-link {
+    display: inline-block;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+  }
+
+  .gallery-photo-link:hover {
+    transform: scale(1.03) rotate(-1deg);
+  }
+
+  .gallery-photo-link:focus-visible {
+    outline: 4px solid yellow;
+    outline-offset: 6px;
+  }
+
