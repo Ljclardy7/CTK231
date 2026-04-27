@@ -4,6 +4,10 @@
 <meta charset="UTF-8">
 <title>Logan Clardy's AWESOME Audio Portfolio!!!</title>
 <link href="Home.css" rel="stylesheet" type="text/css">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+>
 
 
 </head>
@@ -79,11 +83,46 @@
 
 <div style="text-align:center; background-color: pink; padding: 20px; border: 4px double black;">
 
-  <img src="C0F72D6B-39A4-467B-AE1D-00D63E1D2CE6_1_105_c.jpeg" class="gallery-photo" alt="me at red rocks">
-  <img src="999FD700-21E1-441D-82C5-25B0F5C7E1F9_1_105_c.jpeg" class="gallery-photo" alt="my band playing outside">
-  <img src="33D7DC0B-4E76-456D-91DC-75BD9EE46B8D_1_105_c.jpeg" class="gallery-photo" alt="me doing sound at a bar">
-  <img src="8A3AF12C-0768-4F1D-9A5D-8DADEAA8585D_1_105_c.jpeg" class="gallery-photo" alt="me looking out over the mountains">
-  <img src="48CA6DF8-E4F2-40DE-9CEC-C4E243051FAC_1_105_c.jpeg" class="gallery-photo" alt="me with my guitar">
+  <a
+    href="C0F72D6B-39A4-467B-AE1D-00D63E1D2CE6_1_105_c.jpeg"
+    data-fancybox="home-gallery"
+    data-caption="Me at Red Rocks"
+    class="gallery-photo-link"
+  >
+    <img src="C0F72D6B-39A4-467B-AE1D-00D63E1D2CE6_1_105_c.jpeg" class="gallery-photo" alt="me at red rocks">
+  </a>
+  <a
+    href="999FD700-21E1-441D-82C5-25B0F5C7E1F9_1_105_c.jpeg"
+    data-fancybox="home-gallery"
+    data-caption="My band playing outside"
+    class="gallery-photo-link"
+  >
+    <img src="999FD700-21E1-441D-82C5-25B0F5C7E1F9_1_105_c.jpeg" class="gallery-photo" alt="my band playing outside">
+  </a>
+  <a
+    href="33D7DC0B-4E76-456D-91DC-75BD9EE46B8D_1_105_c.jpeg"
+    data-fancybox="home-gallery"
+    data-caption="Me doing sound at a bar"
+    class="gallery-photo-link"
+  >
+    <img src="33D7DC0B-4E76-456D-91DC-75BD9EE46B8D_1_105_c.jpeg" class="gallery-photo" alt="me doing sound at a bar">
+  </a>
+  <a
+    href="8A3AF12C-0768-4F1D-9A5D-8DADEAA8585D_1_105_c.jpeg"
+    data-fancybox="home-gallery"
+    data-caption="Me looking out over the mountains"
+    class="gallery-photo-link"
+  >
+    <img src="8A3AF12C-0768-4F1D-9A5D-8DADEAA8585D_1_105_c.jpeg" class="gallery-photo" alt="me looking out over the mountains">
+  </a>
+  <a
+    href="48CA6DF8-E4F2-40DE-9CEC-C4E243051FAC_1_105_c.jpeg"
+    data-fancybox="home-gallery"
+    data-caption="Me with my guitar"
+    class="gallery-photo-link"
+  >
+    <img src="48CA6DF8-E4F2-40DE-9CEC-C4E243051FAC_1_105_c.jpeg" class="gallery-photo" alt="me with my guitar">
+  </a>
 
   <br>
 
@@ -138,6 +177,20 @@
   Visitors: <span class="hit-counter">000&#8203;4&#8203;2&#8203;0</span>
 
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<script>
+  Fancybox.bind('[data-fancybox="home-gallery"]', {
+    Thumbs: false,
+    Toolbar: {
+      display: {
+        left: ["infobar"],
+        middle: [],
+        right: ["slideshow", "close"]
+      }
+    }
+  });
+</script>
 
 </body>
 </html>
