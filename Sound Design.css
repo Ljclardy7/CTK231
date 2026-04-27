@@ -57,3 +57,31 @@ body {
     display: inline-block;
     font-size: 18px;
   }
+
+  .work-photo-link {
+    display: inline-block;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+  }
+
+  .work-photo-link:hover {
+    transform: scale(1.02) rotate(-1deg);
+  }
+
+  .work-photo-link:focus-visible {
+    outline: 4px solid yellow;
+    outline-offset: 6px;
+  }
+
+  .work-photo {
+    margin: 8px;
+    border: 5px solid navy;
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .gallery-hidden {
+    display: none;
+  }
+
