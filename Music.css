@@ -32,7 +32,7 @@
     font-size: 20px;
   }
 
-  /* i made the current page bold so u know where u are!!! */
+  
   .nav a.current {
     color: lime;
     font-weight: bold;
@@ -152,4 +152,20 @@
     object-fit: cover;
     border: 5px solid navy;
     margin: 0;
+    display: block;
+  }
+
+  .live-photo-link {
+    display: inline-block;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .live-photo-link:hover {
+    transform: scale(1.03) rotate(-1deg);
+  }
+
+  .live-photo-link:focus-visible {
+    outline: 4px solid yellow;
+    outline-offset: 6px;
   }
